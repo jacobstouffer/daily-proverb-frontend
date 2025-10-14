@@ -3,7 +3,7 @@
   import { goto } from '$app/navigation';
   let { children, data } = $props();
   import { page } from '$app/state';  
-  
+
   const { chapters, verses } = data;
   let hasContent = true;
 
@@ -12,8 +12,8 @@
     hasContent = false;
   }
   
-  let selectedChapter = $state(Number(page.params?.chapter || "10"));
-  let selectedVerse = $state(Number(page.params?.verse || "1"));
+  let selectedChapter = $state(Number(page.params?.chapter || ""));
+  let selectedVerse = $state(Number(page.params?.verse || ""));
 
   function handleVerseChange(event) {
     event.preventDefault();
