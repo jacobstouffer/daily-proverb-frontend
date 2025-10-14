@@ -1,12 +1,22 @@
-import { post } from "./data.js";
-import { USE_TEST_DATA } from '$env/static/private';
+import { BACKEND_URL } from '$env/static/private';
 
+export async function load({ params }) {
+  try {
+    const response = await fetch(
+      `${BACKEND_URL}/api/proverbs/single-proverb?chapter=${params.chapter}&verse=${params.verse}`
+    );
 
-export function load() {
-  console.log("use test data:", USE_TEST_DATA);
-  if (USE_TEST_DATA === "true") {
-    return post;
-  } else {
+    if (!response.ok) {
+      console.error(
+        `Unable to get proverb ${params.chapter}:${params.verse}, status = ${response.status}`
+      );
+      return null;
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(`Unable to get proverb ${params.chapter}:${params.verse}, error = ${error}`);
     return null;
   }
 }

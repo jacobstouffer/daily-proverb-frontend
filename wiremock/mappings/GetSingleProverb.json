@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/api/proverbs/single-proverb"
+  },
+  "response": {
+    "status": 200,
+    "body": '{"Chapter": 10, "StartVerse": 1, "EndVerse": 1, "Passage": "Treasure gained by wickedness does not profit, But righteousness delivers from death.", "Commentary": "<p>First sentence</p><p>Second sentence</p>"}',
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
