@@ -17,6 +17,7 @@ npm run dev -- --open
 Mocking API calls allows us to test frontend functionality without needing to connect to a live backend.
 
 Mock API responses are found in [wiremock folder](/wiremock/mappings)
+
 To use the mock API response, 
 1. Add a variable to .env
 ```BACKEND_URL=http://localhost:8080```

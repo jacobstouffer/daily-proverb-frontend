@@ -1,14 +1,14 @@
-import { BACKEND_URL } from '$env/static/private';
+import { BACKEND_URL, FREQUENCY } from '$env/static/private';
 
 export async function load() {
   try {
     const response = await fetch(
-      `${BACKEND_URL}/api/proverbs/list-references`
+      `${BACKEND_URL}/api/proverbs/${FREQUENCY}-featured`
     );
 
     if (!response.ok) {
       console.error(
-        `Unable to get proverb chapters and verses, status = ${response.status}`
+        `Unable to get featured proverb, status = ${response.status}`
       );
       return null;
     }
@@ -17,7 +17,7 @@ export async function load() {
     return data;
   } catch (error) {
     console.error(
-        `Unable to get proverb chapters and verses, error = ${error}`
+      `Unable to get featured proverb, error = ${error}`
     );
     return null;
   }

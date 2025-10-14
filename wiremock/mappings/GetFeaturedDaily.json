@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/api/proverbs/daily-featured"
+  },
+  "response": {
+    "status": 200,
+    "body": '{"Chapter": 14, "StartVerse": 1, "EndVerse": 1, "Passage": "The wisest of women builds her house, but folly with her own hands tears it down.", "Commentary": "<p>First sentence</p><p>Second sentence</p>"}',
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

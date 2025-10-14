@@ -4,8 +4,6 @@
   let { children, data } = $props();
   import { page } from '$app/state';  
   
-  console.log("pathname:", JSON.stringify(page.params));
-
   const { chapters, verses } = data;
   let hasContent = true;
 
