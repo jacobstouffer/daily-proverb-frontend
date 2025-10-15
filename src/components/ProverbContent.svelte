@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from '$app/navigation';
-  import { getPrevious } from '../utils/reference';
+  import { getPrevious, getNext } from '../utils/reference';
   let { data } = $props();
   const hasContent = data && 
     data.StartVerse && 
@@ -14,15 +14,19 @@
   let nextChapter = $state(0);
   let nextVerse = $state(0);
   let hasPrevious = $state(false);
-  let hasNext = false;
+  let hasNext = $state(false);
 
   // Get previous and next verses for navigation
   $effect(() => {
     const verseObjMap: Map<string, number[]> | null = data.verses ? new Map(Object.entries(data.verses)) : null;
-    const results = getPrevious(data.StartVerse, data.Chapter, verseObjMap);
-    previousChapter = results.chapter;
-    previousVerse = results.verse;
+    const pResults = getPrevious(data.StartVerse, data.Chapter, verseObjMap);
+    const nResults = getNext(data.StartVerse, data.Chapter, verseObjMap);
+    previousChapter = pResults.chapter;
+    previousVerse = pResults.verse;
+    nextChapter = nResults.chapter;
+    nextVerse = nResults.verse;
     hasPrevious = previousChapter !== 0 && previousVerse !== 0;
+    hasNext = nextChapter != 0 && nextVerse !== 0;
   });
 
   const proverbSuffix = data.StartVerse !== data.EndVerse ? ` - ${data.EndVerse}` : "";
