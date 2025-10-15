@@ -16,6 +16,7 @@
   let hasPrevious = $state(false);
   let hasNext = false;
 
+  // Get previous and next verses for navigation
   $effect(() => {
     const verseObjMap: Map<string, number[]> | null = data.verses ? new Map(Object.entries(data.verses)) : null;
     const results = getPrevious(data.StartVerse, data.Chapter, verseObjMap);
