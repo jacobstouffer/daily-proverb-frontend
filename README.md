@@ -4,14 +4,11 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+To begin local testing:
+1. Install dependencies with `npm install`
+2. Copy values from .env.example to .env (some values may need to be changed)
+3. Run the mock server (see below)
+4. Run the app `npm run dev -- -- open`
 
 ### Mocking API calls
 Mocking API calls allows us to test frontend functionality without needing to connect to a live backend.

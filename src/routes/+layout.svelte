@@ -3,17 +3,17 @@
   import { goto } from '$app/navigation';
   let { children, data } = $props();
   import { page } from '$app/state';  
-  
-  const { chapters, verses } = data;
-  let hasContent = true;
 
-  if (!chapters || !verses) {
-    console.error("Error getting chapters and verses");
-    hasContent = false;
-  }
+  const { chapters, verses } = data;
+  const hasContent = chapters != undefined && 
+    verses != undefined && 
+    chapters.length > 0 && 
+    verses["10"] && 
+    verses["10"].length > 0;
+
   
-  let selectedChapter = $state(Number(page.params?.chapter || "10"));
-  let selectedVerse = $state(Number(page.params?.verse || "1"));
+  let selectedChapter = $state(Number(page.params?.chapter || ""));
+  let selectedVerse = $state(Number(page.params?.verse || ""));
 
   function handleVerseChange(event) {
     event.preventDefault();
