@@ -11,16 +11,15 @@
     verses["10"] && 
     verses["10"].length > 0;
 
-  
   let selectedChapter = $state(Number(page.params?.chapter || ""));
   let selectedVerse = $state(Number(page.params?.verse || ""));
 
-  function handleVerseChange(event) {
+  function handleVerseChange(event: MouseEvent) {
     event.preventDefault();
     goto(`/${selectedChapter}/${selectedVerse}`);
   }
 
-  function handleChapterChange(event) {
+  function handleChapterChange(event: MouseEvent) {
     event.preventDefault();
     selectedVerse = 1;
     goto(`/${selectedChapter}/1`);
@@ -35,12 +34,25 @@
     justify-content: center;
     gap: .5em;
   }
+
+  .menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2em;
+  }
 </style>
 
 <svelte:head>
   <link rel="icon" href={favicon} />
 </svelte:head>
 
+
+<header>
+  <article class="menu-items">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+  </article>
 {#if hasContent}
 <article class="proverb-selection-container">
 <p>Chapter</p>
@@ -62,5 +74,6 @@
 </article>
 {:else}
 {/if}
+</header>
 
 {@render children?.()}
