@@ -5,7 +5,7 @@
   },
   "response": {
     "status": 200,
-    "body": '{"Chapter": 13, "StartVerse": 2, "EndVerse": 2, "Passage": "From the fruit of his mouth a man eats what is good, but the desire of the treacherous is for violence.", "Commentary": "<p>First sentence</p><p>Second sentence</p>"}',
+    "body": '{"Chapter": 13, "StartVerse": 2, "EndVerse": 2, "Passage": "From the fruit of his mouth a man eats what is good, but the desire of the treacherous is for violence.", "Commentary": "<p>First sentence</p><p>Second sentence</p>" }',
     "headers": {
       "Content-Type": "application/json"
     }

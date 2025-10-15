@@ -5,12 +5,12 @@
   import { page } from '$app/state';  
 
   const { chapters, verses } = data;
-  let hasContent = true;
+  const hasContent = chapters != undefined && 
+    verses != undefined && 
+    chapters.length > 0 && 
+    verses["10"] && 
+    verses["10"].length > 0;
 
-  if (!chapters || !verses) {
-    console.error("Error getting chapters and verses");
-    hasContent = false;
-  }
   
   let selectedChapter = $state(Number(page.params?.chapter || ""));
   let selectedVerse = $state(Number(page.params?.verse || ""));
