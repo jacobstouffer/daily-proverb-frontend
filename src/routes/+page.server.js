@@ -1,24 +1,18 @@
-import { BACKEND_URL, FREQUENCY } from '$env/static/private';
+import { createClient } from 'redis';
+
 
 export async function load() {
   try {
-    const response = await fetch(
-      `${BACKEND_URL}/api/proverbs/${FREQUENCY}-featured`
-    );
-
-    if (!response.ok) {
-      console.error(
-        `Unable to get featured proverb, status = ${response.status}`
-      );
-      return null;
-    }
-
-    const data = await response.json();
+    const client = createClient();
+    client.on('error', err => console.error("Redis Client Error", err));
+    await client.connect();
+    const data = await client.json.get('featured-json');
+    console.log("data:", JSON.stringify(data));
+    await client.quit();
+    if (!data?.Chapter) return null;
     return data;
   } catch (error) {
-    console.error(
-      `Unable to get featured proverb, error = ${error}`
-    );
+    console.log("Error getting featured proverb:", error);
     return null;
   }
 }
