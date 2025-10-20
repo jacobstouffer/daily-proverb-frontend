@@ -1,24 +1,7 @@
-import { BACKEND_URL } from '$env/static/private';
+import { getDocument } from "../utils/documentdb";
 
 export async function load() {
-  try {
-    const response = await fetch(
-      `${BACKEND_URL}/api/proverbs/list-references`
-    );
-
-    if (!response.ok) {
-      console.error(
-        `Unable to get proverb chapters and verses, status = ${response.status}`
-      );
-      return null;
-    }
-
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(
-        `Unable to get proverb chapters and verses, error = ${error}`
-    );
-    return null;
-  }
+  const data = await getDocument("references");
+  if (!data?.chapters || !data?.verses) return null;
+  return data;
 }

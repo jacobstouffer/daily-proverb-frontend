@@ -2,12 +2,13 @@
   import { goto } from '$app/navigation';
   import { getPrevious, getNext } from '../utils/reference';
   let { data } = $props();
-  const hasContent = data && 
+  console.log("data from props:", JSON.stringify(data));
+  const hasContent = $derived(data && 
     data.StartVerse && 
     data.EndVerse && 
     data.Chapter && 
     data.Passage && 
-    data.Commentary;
+    data.Commentary);
 
   let previousChapter = $state(0);
   let previousVerse = $state(0);
