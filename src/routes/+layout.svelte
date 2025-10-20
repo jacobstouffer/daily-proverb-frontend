@@ -1,6 +1,5 @@
 <script lang="ts">
   import favicon from '$lib/assets/favicon.svg';
-  import { goto } from '$app/navigation';
   let { children, data } = $props();
   import { page } from '$app/state';  
 
@@ -16,13 +15,13 @@
 
   function handleVerseChange(event: MouseEvent) {
     event.preventDefault();
-    goto(`/${selectedChapter}/${selectedVerse}`);
+    window.location.href = `/${selectedChapter}/${selectedVerse}`;
   }
 
   function handleChapterChange(event: MouseEvent) {
     event.preventDefault();
     selectedVerse = 1;
-    goto(`/${selectedChapter}/1`);
+    window.location.href = `/${selectedChapter}/1`;
   }
 
 </script>
@@ -50,8 +49,8 @@
 
 <header>
   <article class="menu-items">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
+    <a href="/" data-sveltekit-reload>Home</a>
+    <a href="/about" data-sveltekit-reload>About</a>
   </article>
 {#if hasContent}
 <article class="proverb-selection-container">

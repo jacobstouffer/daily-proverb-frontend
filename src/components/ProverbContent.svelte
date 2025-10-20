@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { goto } from '$app/navigation';
   import { getPrevious, getNext } from '../utils/reference';
   let { data } = $props();
   console.log("data from props:", JSON.stringify(data));
@@ -35,12 +34,12 @@
 
   function handleGetPrevious(event: MouseEvent) {
     event.preventDefault();
-    goto(`/${previousChapter}/${previousVerse}`);
+    window.location.href = `/${previousChapter}/${previousVerse}`;
   }
   
   function handleGetNext(event: MouseEvent) {
     event.preventDefault();
-    goto(`/${nextChapter}/${nextVerse}`);
+    window.location.href = `/${nextChapter}/${nextVerse}`;
   }
 
 </script>
