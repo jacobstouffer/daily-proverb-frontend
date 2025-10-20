@@ -5,7 +5,7 @@ import { documentMap } from "../data/testData";
 export async function getDocument(key) {
   try {
     if (USE_TEST_DATA === "true") {
-      const testKey = key === "references" ? key : "single-proverb";
+      const testKey = ["references", "featured"].includes(key) ? key : "single-proverb";
       return documentMap[testKey];
     }
     const client = createClient();
