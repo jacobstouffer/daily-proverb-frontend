@@ -5,9 +5,9 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 ## Developing
 
 To begin local testing:
-1. Install dependencies with `npm install`
-2. Copy values from .env.example to .env (this will use test data when running locally)
-3. Run the mock server (see below)
+1. Use node version 22 (ex. `nvm install 22; nvm use 22`)
+2. Install dependencies with `npm install`
+3. Copy values from .env.example to .env (this will use test data when running locally)
 4. Run the app `npm run dev -- -- open`
 
 ## Building
