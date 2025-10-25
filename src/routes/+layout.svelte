@@ -40,6 +40,11 @@
     justify-content: left;
     gap: 2em;
   }
+
+  .menu-ref {
+    text-decoration: none;
+  }
+
 </style>
 
 <svelte:head>
@@ -49,8 +54,9 @@
 
 <header>
   <article class="menu-items">
-    <a href="/" data-sveltekit-reload>Home</a>
-    <a href="/about" data-sveltekit-reload>About</a>
+    <a href="/" class="menu-ref" data-sveltekit-reload>Home</a>
+    <a href="/about" class="menu-ref" data-sveltekit-reload>About</a>
+    <a href="/about?about-me" class="menu-ref" data-sveltekit-reload>Adoption Fund</a>
   </article>
 {#if hasContent}
 <article class="proverb-selection-container">
