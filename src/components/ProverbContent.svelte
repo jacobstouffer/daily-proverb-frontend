@@ -1,7 +1,6 @@
 <script lang="ts">
   import { getPrevious, getNext } from '../utils/reference';
   let { data } = $props();
-  console.log("data from props:", JSON.stringify(data));
   const hasContent = $derived(data && 
     data.StartVerse && 
     data.EndVerse && 
@@ -9,26 +8,16 @@
     data.Passage && 
     data.Commentary);
 
-  let previousChapter = $state(0);
-  let previousVerse = $state(0);
-  let nextChapter = $state(0);
-  let nextVerse = $state(0);
-  let hasPrevious = $state(false);
-  let hasNext = $state(false);
-
-  // Get previous and next verses for navigation
-  $effect(() => {
-    const verseObjMap: Map<string, number[]> | null = data.verses ? new Map(Object.entries(data.verses)) : null;
-    const pResults = getPrevious(data.StartVerse, data.Chapter, verseObjMap);
-    const nResults = getNext(data.StartVerse, data.Chapter, verseObjMap);
-    previousChapter = pResults.chapter;
-    previousVerse = pResults.verse;
-    nextChapter = nResults.chapter;
-    nextVerse = nResults.verse;
-    hasPrevious = previousChapter !== 0 && previousVerse !== 0;
-    hasNext = nextChapter != 0 && nextVerse !== 0;
-  });
-
+  const verseObjMap: Map<string, number[]> | null = $derived(data.verses ? new Map(Object.entries(data.verses)) : null);
+  const pResults = $derived(getPrevious(Number(data.StartVerse), Number(data.Chapter), verseObjMap));
+  const nResults = $derived(getNext(Number(data.StartVerse), Number(data.Chapter), verseObjMap));
+  const previousChapter = $derived(pResults.chapter);
+  const previousVerse = $derived(pResults.verse);
+  const nextChapter = $derived(nResults.chapter);
+  const nextVerse = $derived(nResults.verse);
+  const hasPrevious = $derived(previousChapter !== 0 && previousVerse !== 0);
+  const hasNext = $derived(nextChapter != 0 && nextVerse !== 0);
+  
   const proverbSuffix = data.StartVerse !== data.EndVerse ? ` - ${data.EndVerse}` : "";
   const passage = data.Passage ? data.Passage.replace('\n', '<br />') : "";
 
