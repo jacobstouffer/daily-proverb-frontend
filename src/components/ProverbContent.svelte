@@ -34,7 +34,7 @@
 </script>
 
 <div class="proverb-navigation">
-  <button name="previous-proverb" disabled={!hasPrevious} onclick={handleGetPrevious}>Previous</button>
+  <button class="previous-proverb prev-next" name="previous-proverb" disabled={!hasPrevious} onclick={handleGetPrevious}>Prev</button>
   <article class="main-content">
     {#if hasContent}
     <h2>Proverb {data.Chapter}:{data.StartVerse}{proverbSuffix}</h2>
@@ -44,14 +44,39 @@
     <p>We're sorry. There was an error getting the commentary for this proverb.</p>
     {/if}
   </article>
-  <button name="next-proverb" disabled={!hasNext} onclick={handleGetNext}>Next</button>
+  <button class="next-proverb prev-next" name="next-proverb" disabled={!hasNext} onclick={handleGetNext}>Next</button>
 </div>
 
 <style>
   .proverb-navigation {
+    margin-top: 40px; 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3em;
   }
+
+  .prev-next {
+    position: fixed;
+    top: 50vh;
+  }
+
+  .previous-proverb {
+    left: 30px;
+  }
+
+  .next-proverb {
+    right: 30px;
+  }
+
+  .main-content {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
 </style>
