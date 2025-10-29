@@ -21,20 +21,18 @@
   const proverbSuffix = data.StartVerse !== data.EndVerse ? ` - ${data.EndVerse}` : "";
   const passage = data.Passage ? data.Passage.replace('\n', '<br />') : "";
 
-  function handleGetPrevious(event: MouseEvent) {
-    event.preventDefault();
-    window.location.href = `/${previousChapter}/${previousVerse}`;
-  }
-  
-  function handleGetNext(event: MouseEvent) {
-    event.preventDefault();
-    window.location.href = `/${nextChapter}/${nextVerse}`;
-  }
-
 </script>
 
 <div class="proverb-navigation">
-  <button class="previous-proverb prev-next" name="previous-proverb" disabled={!hasPrevious} onclick={handleGetPrevious}>Prev</button>
+  <a class={hasPrevious ? "" : "disableClick"} href={`/${previousChapter}/${previousVerse}`} data-sveltekit-reload >
+    <img 
+      class="previous-proverb prev-next" 
+      name="previous-proverb" 
+      src={hasPrevious ? `/icons/arrow-small-left.svg` : `/icons/arrow-small-left-grey.svg`}
+      width={30}
+      height={30}
+    />
+  </a>
   <article class="main-content">
     {#if hasContent}
     <h2>Proverb {data.Chapter}:{data.StartVerse}{proverbSuffix}</h2>
@@ -44,7 +42,15 @@
     <p>We're sorry. There was an error getting the commentary for this proverb.</p>
     {/if}
   </article>
-  <button class="next-proverb prev-next" name="next-proverb" disabled={!hasNext} onclick={handleGetNext}>Next</button>
+  <a class={hasNext ? "" : "disableClick"} href={`/${nextChapter}/${nextVerse}`} data-sveltekit-reload >
+    <img 
+      class="next-proverb prev-next" 
+      name="next-proverb" 
+      src={hasNext ? `/icons/arrow-small-right.svg` : `/icons/arrow-small-right-grey.svg`}
+      width={30}
+      height={30}
+    />
+  </a>
 </div>
 
 <style>
@@ -77,6 +83,10 @@
   h2 {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .disableClick {
+    pointer-events: none;
   }
 
 </style>
