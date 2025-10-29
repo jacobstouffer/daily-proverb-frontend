@@ -1,7 +1,7 @@
 <script>
   import { page } from '$app/state';
   const paramTab = page.url.searchParams.get('tab');
-  const validTabs = ["about-me", "about-weekly-proverb", "what-is-the-gospel"];
+  const validTabs = ["about-me", "about-weekly-proverb", "what-is-the-gospel", "copyright"];
   export let items = [];
   export let activeTabValue = paramTab && validTabs.includes(paramTab) ? paramTab : "about-me";
 
