@@ -1,7 +1,7 @@
 <script>
   import { page } from '$app/state';
   const paramTab = page.url.searchParams.get('tab');
-  const validTabs = ["about-me", "about-weekly-proverb", "what-is-the-gospel"];
+  const validTabs = ["about-me", "about-weekly-proverb", "what-is-the-gospel", "copyright"];
   export let items = [];
   export let activeTabValue = paramTab && validTabs.includes(paramTab) ? paramTab : "about-me";
 
@@ -29,6 +29,8 @@
     border: 1px solid #dee2e6;
     border-radius: 0 0 .5rem .5rem;
     border-top: 0;
+    font-size: 20px;
+    line-height: 1.5;
   }
   
   ul {
@@ -38,6 +40,7 @@
     margin-bottom: 0;
     list-style: none;
     border-bottom: 1px solid #dee2e6;
+    font-size: 18px;
   }
   li {
     margin-bottom: -1px;
@@ -57,7 +60,7 @@
   }
 
   li.active > span {
-    color: #495057;
+    color: #775402;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff;
   }

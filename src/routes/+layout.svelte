@@ -27,30 +27,51 @@
 </script>
 
 <style>
+  .page-container {
+    margin: auto;
+    max-width: 700px;
+  }
+
   .proverb-selection-container {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
     gap: .5em;
   }
 
   .menu-items {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: left;
     gap: 2em;
+    font-size: 18px;
+    color: #775402;
   }
+
+  a, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #d49b15;
+  }
+
 </style>
 
 <svelte:head>
   <link rel="icon" href={favicon} />
 </svelte:head>
 
-
+<div class="page-container">
 <header>
   <article class="menu-items">
-    <a href="/" data-sveltekit-reload>Home</a>
-    <a href="/about" data-sveltekit-reload>About</a>
+    <a href="/" class="menu-ref" data-sveltekit-reload>HOME</a>
+    <a href="/about" class="menu-ref" data-sveltekit-reload>ABOUT</a>
+    <a href="/about?about-me" class="menu-ref" data-sveltekit-reload>ADOPTION FUND</a>
   </article>
 {#if hasContent}
 <article class="proverb-selection-container">
@@ -76,3 +97,4 @@
 </header>
 
 {@render children?.()}
+</div>
