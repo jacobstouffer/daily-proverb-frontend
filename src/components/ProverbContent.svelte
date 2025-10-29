@@ -54,13 +54,4 @@
     justify-content: center;
     gap: 3em;
   }
-
-  a.rtBibleRef {
-    text-decoration: none !important; /* Remove default underline */
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.5); /* Dotted underline with light opacity */
-    transition: border-color 0.3s ease-in-out;
-    &:hover {
-      border-bottom-color: rgba(0, 0, 0, 0.7); /* Darken underline on hover */
-    }
-  }
 </style>
