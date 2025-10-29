@@ -23,7 +23,7 @@
 
 </script>
 
-<div class="proverb-navigation">
+<div class="proverb-content">
   <a class={hasPrevious ? "" : "disableClick"} href={`/${previousChapter}/${previousVerse}`} data-sveltekit-reload >
     <img 
       class="previous-proverb prev-next" 
@@ -54,7 +54,7 @@
 </div>
 
 <style>
-  .proverb-navigation {
+  .proverb-content {
     margin-top: 40px; 
     display: flex;
     align-items: center;
