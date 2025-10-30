@@ -36,7 +36,7 @@
   <article class="main-content">
     {#if hasContent}
     <h2>Proverb {data.Chapter}:{data.StartVerse}{proverbSuffix}</h2>
-    <p>{@html passage}</p>
+    <div class="passage">{@html passage}</div>
     {@html data.Commentary}
     {:else}
     <p>We're sorry. There was an error getting the commentary for this proverb.</p>
@@ -54,6 +54,7 @@
 </div>
 
 <style>
+
   .proverb-content {
     margin-top: 40px; 
     display: flex;
@@ -89,4 +90,9 @@
     pointer-events: none;
   }
 
+  .passage {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted grey;
+  }
 </style>

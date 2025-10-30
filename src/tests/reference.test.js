@@ -38,17 +38,23 @@ describe('getNext', () => {
   });
 
   test('When null passed in', () => {
-    const values = getNext(10, 2, null);
+    const values = getNext(2, 10, null);
     expect(values.verse).toEqual(0);
   });
 
   test('When current verse is not in map', () => {
     const verseMap = new Map();
     verseMap.set('10', [1, 3, 4, 5]);
-    const values = getNext(10, 2, verseMap);
+    const values = getNext(2, 10, verseMap);
     expect(values.verse).toEqual(0);
   });
 
+  test('When chapter has 2 verses', () => {
+    const verseMap = new Map();
+    verseMap.set('10', [1, 2]);
+    const values = getNext(1, 10, verseMap);
+    expect(values.verse).toEqual(2);
+  });
 });
 
 describe('getPrevious', () => {

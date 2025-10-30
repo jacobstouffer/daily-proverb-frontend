@@ -12,7 +12,6 @@ export async function getDocument(key) {
     client.on('error', err => console.error("Redis Client Error", err));
     await client.connect();
     const data = await client.json.get(key);
-    console.log("data:", JSON.stringify(data));
     await client.quit();
     return data;
   } catch (error) {

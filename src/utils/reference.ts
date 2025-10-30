@@ -80,7 +80,7 @@ export function getNext(
     }
 
     // Find the current verse and select the one after it in the list
-    for (let i = 0; i < nextVerses.length - 2; i++) {
+    for (let i = 0; i <= nextVerses.length - 2; i++) {
       if (nextVerses[i] === currentVerse) {
         return refObj(nextChapter, nextVerses[i + 1]);
       } else if (nextVerses[i + 1] < currentVerse) {
