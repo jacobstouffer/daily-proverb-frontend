@@ -19,7 +19,7 @@
   const hasNext = $derived(nextChapter != 0 && nextVerse !== 0);
   
   const proverbSuffix = data.StartVerse !== data.EndVerse ? ` - ${data.EndVerse}` : "";
-  const passage = data.Passage ? data.Passage.replace('\n', '<br />') : "";
+  const passage = data.Passage ? data.Passage.replaceAll('\n', '<br />') : "";
 
 </script>
 
@@ -61,6 +61,7 @@
     align-items: center;
     justify-content: center;
     gap: 3em;
+    margin-bottom: 120px;
   }
 
   .prev-next {
