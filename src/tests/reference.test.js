@@ -5,9 +5,9 @@ describe('getNext', () => {
   test('Return next from same chapter', () => {
     const verseMap = new Map();
     verseMap.set('10', [1, 2, 3, 4, 5]);
-    const values = getNext(2, 10, verseMap);
+    const values = getNext(3, 10, verseMap);
 
-    expect(values.verse).toEqual(3);
+    expect(values.verse).toEqual(4);
   });
   
   test('Return next from different chapter', () => {

@@ -83,9 +83,7 @@ export function getNext(
     for (let i = 0; i <= nextVerses.length - 2; i++) {
       if (nextVerses[i] === currentVerse) {
         return refObj(nextChapter, nextVerses[i + 1]);
-      } else if (nextVerses[i + 1] < currentVerse) {
-        return refObj(0, 0);
-      }
+      } 
     }
     return refObj(0, 0);
   } catch (error) {
