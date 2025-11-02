@@ -1,5 +1,5 @@
 import { createClient } from 'redis';
-import { USE_TEST_DATA } from '$env/static/private';
+import { USE_TEST_DATA, REDIS_HOST } from '$env/static/private';
 import { documentMap } from "../data/testData";
 
 export async function getDocument(key) {
@@ -8,7 +8,7 @@ export async function getDocument(key) {
       const testKey = ["references", "featured"].includes(key) ? key : "single-proverb";
       return documentMap[testKey];
     }
-    const client = createClient();
+    const client = createClient({ url: REDIS_HOST });
     client.on('error', err => console.error("Redis Client Error", err));
     await client.connect();
     const data = await client.json.get(key);
