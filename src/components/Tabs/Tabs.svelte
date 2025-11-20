@@ -6,7 +6,6 @@
   export let activeTabValue = paramTab && validTabs.includes(paramTab) ? paramTab : "about-me";
 
   const handleClick = tabValue => () => {
-    console.log("tabValue:", tabValue);
     window.location.href = `/about?tab=${tabValue}`
   }
 </script>
