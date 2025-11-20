@@ -1,54 +1,81 @@
-<h2>
-Now we can have expanded content like this
-</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam placeat recusandae est! Nesciunt consectetur, fuga voluptatem accusantium iste molestias aliquid!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deleniti natus temporibus eius quam. Id ullam quaerat itaque dicta rem, molestiae adipisci corrupti blanditiis sunt eveniet. Vero illo labore eligendi? Nobis molestiae facere maxime repudiandae nemo veritatis quae earum velit.</p>
-  <img src="https://i.picsum.photos/id/1062/680/400.jpg" alt="puppy in sheet" />
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos praesentium ut cupiditate earum error quidem aperiam quae, voluptates cumque. Incidunt, mollitia exercitationem harum tempora possimus sed impedit animi accusantium explicabo dolorum voluptatibus vero autem fugiat ratione dolore magni? Cum rerum quod doloribus culpa impedit quo quos quidem nostrum, libero aliquam nulla laudantium dolor possimus quaerat eum autem nihil sapiente magnam sit. Autem, sunt. Ipsa at, sint labore ipsam omnis, eligendi delectus numquam laborum hic est, deserunt minima repudiandae quaerat aut adipisci exercitationem perferendis animi. Quidem harum incidunt porro fugiat pariatur a placeat, architecto voluptatem, quos corporis voluptatum deserunt quibusdam animi sequi est labore magnam? Ad delectus debitis impedit inventore hic deleniti, temporibus facilis, expedita obcaecati adipisci eius ipsam earum?</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quaerat. Nostrum officia aspernatur nemo iure accusantium consequuntur cupiditate esse atque blanditiis fuga perferendis modi explicabo voluptatum vitae unde, velit magni a molestiae magnam neque, distinctio, hic praesentium dolores optio. Beatae?</p>
-  <blockquote>Some inspiring quotes are better than others, but this one is the best</blockquote>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dolorum facere beatae commodi magnam molestiae non ad cum, sequi distinctio explicabo quaerat temporibus error ex esse incidunt doloribus ducimus earum excepturi et cupiditate corporis laudantium deleniti! Error libero natus incidunt quam recusandae amet non fugit tenetur, temporibus quis odit blanditiis nulla voluptatum voluptate rerum corporis pariatur eius. Numquam tenetur quam autem aspernatur officiis cupiditate odio rerum repellat alias nesciunt. Quae saepe corrupti est, vero ipsa odio nesciunt rerum ad ex.</p>
-  <div class="split">
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum dolore vel necessitatibus nulla sit, molestias quia nesciunt delectus maiores eum culpa porro, ducimus deserunt natus facere mollitia voluptatibus! Voluptatibus.</p>
-      <br>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nisi laboriosam error fuga porro quisquam voluptatum enim similique provident nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eum illo amet temporibus praesentium nemo harum, earum autem veritatis qui!</p>
-    </div>
-    <div>
-      <img src="https://i.picsum.photos/id/237/320/320.jpg" alt="doggo">
-    </div>
-  </div>
-  <div class="split">
-    
-    <div>
-      <img src="https://i.picsum.photos/id/169/320/320.jpg" alt="doggo">
-    </div>
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum dolore vel necessitatibus nulla sit, molestias quia nesciunt delectus maiores eum culpa porro, ducimus deserunt natus facere mollitia voluptatibus! Voluptatibus.</p>
-      <br>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nisi laboriosam error fuga porro quisquam voluptatum enim similique provident nam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae id, rem libero consequuntur autem delectus cum ipsam ipsum eos eveniet.</p>
-    </div>
-  </div>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos praesentium ut cupiditate earum error quidem aperiam quae, voluptates cumque. Incidunt, mollitia exercitationem harum tempora possimus sed impedit animi accusantium explicabo dolorum voluptatibus vero autem fugiat ratione dolore magni? Cum rerum quod doloribus culpa impedit quo quos quidem nostrum, libero aliquam nulla laudantium dolor possimus quaerat eum autem nihil sapiente magnam sit. Autem, sunt. Ipsa at, sint labore ipsam omnis, eligendi delectus numquam laborum hic est, deserunt minima repudiandae quaerat aut adipisci exercitationem perferendis animi. Quidem harum incidunt porro fugiat pariatur a placeat, architecto voluptatem, quos corporis voluptatum deserunt quibusdam animi sequi est labore magnam? Ad delectus debitis impedit inventore hic deleniti, temporibus facilis, expedita obcaecati adipisci eius ipsam earum?</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quaerat. Nostrum officia aspernatur nemo iure accusantium consequuntur cupiditate esse atque blanditiis fuga perferendis modi explicabo voluptatum vitae unde, velit magni a molestiae magnam neque, distinctio, hic praesentium dolores optio. Beatae?</p>
-
-<style>
-p {
-  font-size: 17px;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-img {
-  border-radius: 1rem;
-}
-blockquote {
-    font-size: 30px;
-    color: #888;
-    position: relative;
-}
-
-blockquote:before {content: "";position: absolute;left: -40px;top: 17%;height: 60px;width: 4px;background: #6878d7;}
-</style>
+<div>
+    <h3>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">The author</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </h3>
+</div>
+<div>
+    <p>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">My name is Jacob Stouffer. I live in California with my wonderful wife, Mariana. We are members of Grace Community Church. I became a Christian at age 30. Before then, I was what Solomon would call a fool. This means that I had 30 years of experience with foolish thinking, speaking, looking, and walking. I was saturated in habits of foolishness. But God, in his kindness, gave me a new life. The book of Proverbs has been instrumental in bringing me out of foolish and wicked habits and helping me walk according to God’s right path.&nbsp;</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </p>
+</div>
+<div>
+    <p>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">I have been and continue to be instructed, encouraged, and challenged by the Proverbs. And I love using the Proverbs to instruct, encourage, and challenge others. To that end, I have set out to write a devotional for each of the proverbs from chapter 10 through chapter 29. In writing these devotionals, I endeavor to present the truth of God’s Word with accuracy, clarity, and conviction. I endeavor to teach the truth of God’s Word only after it has challenged and impacted my own heart (Colossians 3:16).</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </p>
+</div>
+<div>
+    <h3>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">Adoption Fund</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </h3>
+</div>
+<div>
+    <p>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">My wife and I are applying for international adoption from Columbia! A big reason that I am writing these devotionals is that I want to be able to share the wisdom from God’s Word with my future children. If you have been blessed by this project and would like to make a one-time contribution to our adoption fund, my wife and I would be greatly blessed. All donations will be used for adoption related expenses. The adoption process will likely take 1-2 more years. I will update this page with any major developments in the adoption process as they happen.</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </p>
+    <p><a href="/about?tab=about-me">[Link here when available]</a></p>
+</div>
+<div>
+    <h3>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">My beliefs</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </h3>
+</div>
+<div>
+    <p>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">I am an evangelical Christian. I agree with the Statement of Faith of my church. In these devotionals, the authority and inerrancy of Scripture are a non-negotiable starting point. The uniqueness of Jesus as the only path to salvation is a given.&nbsp;</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </p>
+</div>
+<div>
+    <p>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">Many secondary doctrines, however, are less relevant to the proverbs. For example, here are some topics that will probably not arise in these devotionals:&nbsp;</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </p>
+</div>
+<div>
+    <ul>
+        <li>
+            <span class="TextRun SCXW148780909 BCX0 NormalTextRun">church governance</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+        </li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>
+            <span class="TextRun SCXW148780909 BCX0 NormalTextRun">mode of baptism</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+        </li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>
+            <span class="TextRun SCXW148780909 BCX0 NormalTextRun">dispensationalism and covenant theology</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+        </li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>
+            <span class="TextRun SCXW148780909 BCX0 NormalTextRun">the cessation or continuation of spiritual gifts</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+        </li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>
+            <span class="TextRun SCXW148780909 BCX0 NormalTextRun">the millennium.&nbsp;</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+        </li>
+    </ul>
+</div>
+<div>
+    <p>
+        <span class="TextRun SCXW148780909 BCX0 NormalTextRun">I pray that these devotionals will be a blessing to my beloved brothers and sisters in Christ who hold various beliefs about secondary and tertiary doctrines.</span><span class="EOP SCXW148780909 BCX0">&nbsp;</span>
+    </p>
+</div>

@@ -1,6 +1,6 @@
 <script>
   import AboutMeTab from "../../components/Tabs/AboutMe.svelte";
-  import WeeklyProverbTab from "../../components/Tabs/WeeklyProverb.svelte";
+  import DevotionalProverbTab from "../../components/Tabs/DevotionalProverb.svelte";
   import GospelTab from "../../components/Tabs/Gospel.svelte";
   import CopyrightTab from "../../components/Tabs/Copyright.svelte";
   import Tabs from "../../components/Tabs/Tabs.svelte";
@@ -13,9 +13,9 @@
       component: AboutMeTab,
     },
     { 
-      label: "About Weekly Proverb",
-      value: "about-weekly-proverb",
-      component: WeeklyProverbTab,
+      label: "Studying the Proverbs",
+      value: "proverbs-devotional",
+      component: DevotionalProverbTab,
     },
     { 
       label: "What is the Gospel?",
