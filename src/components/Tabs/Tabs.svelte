@@ -1,11 +1,14 @@
 <script>
   import { page } from '$app/state';
   const paramTab = page.url.searchParams.get('tab');
-  const validTabs = ["about-me", "about-weekly-proverb", "what-is-the-gospel", "copyright"];
+  const validTabs = ["about-me", "proverbs-devotional", "what-is-the-gospel", "copyright"];
   export let items = [];
   export let activeTabValue = paramTab && validTabs.includes(paramTab) ? paramTab : "about-me";
 
-  const handleClick = tabValue => () => (activeTabValue = tabValue);
+  const handleClick = tabValue => () => {
+    console.log("tabValue:", tabValue);
+    window.location.href = `/about?tab=${tabValue}`
+  }
 </script>
 
 <ul>
