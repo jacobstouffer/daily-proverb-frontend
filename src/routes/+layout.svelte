@@ -3,15 +3,40 @@
   let { children, data } = $props();
   import { page } from '$app/state';  
 
-  const { chapters, verses } = data;
-  const hasContent = chapters != undefined && 
+  const { 
+    chapters, 
+    verses, 
+    featuredStartVerse, 
+    featuredChapter 
+  } = data;
+  const hasContent = $state(chapters != undefined && 
     verses != undefined && 
     chapters.length > 0 && 
     verses["10"] && 
-    verses["10"].length > 0;
+    verses["10"].length > 0);
 
-  let selectedChapter = $state(Number(page.params?.chapter || ""));
-  let selectedVerse = $state(Number(page.params?.verse || ""));
+  function seedSelectedVerse(
+    pageVerse: string | undefined, 
+    featuredVerse: string, 
+    routeId: string | null
+  ) {
+    if (routeId && routeId.toLowerCase().includes("about")) return "";
+    if (pageVerse) return pageVerse;
+    return featuredVerse ? featuredVerse.toString() : "";
+  }
+
+  function seedSelectedChapter(
+    pageChapter: string | undefined, 
+    featuredChapter: string, 
+    routeId: string | null) 
+  {
+    if (routeId && routeId.toLowerCase().includes("about")) return "10";
+    if (pageChapter) return pageChapter;
+    return featuredChapter ? featuredChapter.toString() : "";
+  }
+
+  let selectedChapter: string = $state(seedSelectedChapter(page.params?.chapter, featuredChapter, page.route?.id));
+  let selectedVerse = $state(seedSelectedVerse(page.params?.verse, featuredStartVerse, page.route?.id));
 
   function handleVerseChange(event: MouseEvent) {
     event.preventDefault();
@@ -20,8 +45,7 @@
 
   function handleChapterChange(event: MouseEvent) {
     event.preventDefault();
-    selectedVerse = 1;
-    window.location.href = `/${selectedChapter}/1`;
+    selectedVerse = "";
   }
 
 </script>
@@ -78,15 +102,16 @@
 <p>Chapter</p>
 <select bind:value={selectedChapter} onchange={handleChapterChange} >
   {#each chapters as chapter}
-    <option value={chapter}>
+    <option value={chapter.toString()}>
       {chapter}
     </option>
   {/each}
 </select>
 <p>Verse</p>
 <select bind:value={selectedVerse} onchange={handleVerseChange} >
+  <option value={""}></option>
   {#each verses[selectedChapter.toString()] as verse}
-    <option value={verse}>
+    <option value={verse.toString()}>
       {verse}
     </option>
   {/each}
