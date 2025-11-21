@@ -3,7 +3,7 @@
 </p>
 <blockquote>
     <p>
-        <span>So Peter opened his mouth and said: “Truly I understand that God shows no partiality, but in every nation anyone who fears him and does what is right is acceptable to him. As for the word that he sent to Israel, preaching good news of peace through Jesus Christ (he is Lord of all), you yourselves know what happened throughout all Judea, beginning from Galilee after the baptism that John proclaimed: how God anointed Jesus of Nazareth with the Holy Spirit and with power. He went about doing good and healing all who were oppressed by the devil, for God was with him. And we are witnesses of all that he did both in the country of the Jews and Jerusalem. They put him to death by hanging him on a tree, but God raised him on the third day and made him to appear, not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead. And he commanded us to preach to the people and to testify that he is the one appointed by God to be judge of the living and the dead. To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name.</span>
+        <span><i>So Peter opened his mouth and said: “Truly I understand that God shows no partiality, but in every nation anyone who fears him and does what is right is acceptable to him. As for the word that he sent to Israel, preaching good news of peace through Jesus Christ (he is Lord of all), you yourselves know what happened throughout all Judea, beginning from Galilee after the baptism that John proclaimed: how God anointed Jesus of Nazareth with the Holy Spirit and with power. He went about doing good and healing all who were oppressed by the devil, for God was with him. And we are witnesses of all that he did both in the country of the Jews and Jerusalem. They put him to death by hanging him on a tree, but God raised him on the third day and made him to appear, not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead. And he commanded us to preach to the people and to testify that he is the one appointed by God to be judge of the living and the dead. To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name.</i></span>
     </p>
 </blockquote>
 <p>
@@ -14,7 +14,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>Truly I understand that God shows no partiality, but in every nation anyone who fears him and does what is right is acceptable to him.</strong></span>
+        <span><i>Truly I understand that God shows no partiality, but in every nation anyone who fears him and does what is right is acceptable to him.</i></span>
     </p>
 </blockquote>
 <p>
@@ -22,7 +22,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>As for the word that he sent to Israel, preaching good news of peace through Jesus Christ (he is Lord of all),</strong></span>
+        <span><i>As for the word that he sent to Israel, preaching good news of peace through Jesus Christ (he is Lord of all),</i></span>
     </p>
 </blockquote>
 <p>
@@ -36,7 +36,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>you yourselves know what happened throughout all Judea, beginning from Galilee after the baptism that John proclaimed:&nbsp;</strong></span>
+        <span><i>you yourselves know what happened throughout all Judea, beginning from Galilee after the baptism that John proclaimed:&nbsp;</i></span>
     </p>
 </blockquote>
 <p>
@@ -44,7 +44,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>how God anointed Jesus of Nazareth with the Holy Spirit and with power.&nbsp;</strong></span>
+        <span><i>how God anointed Jesus of Nazareth with the Holy Spirit and with power.&nbsp;</i></span>
     </p>
 </blockquote>
 <p>
@@ -55,7 +55,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>He went about doing good and healing all who were oppressed by the devil, for God was with him.</strong></span>
+        <span><i>He went about doing good and healing all who were oppressed by the devil, for God was with him.</i></span>
     </p>
 </blockquote>
 <p>
@@ -63,7 +63,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>And we are witnesses of all that he did both in the country of the Jews and in Jerusalem.</strong></span>
+        <span><i>And we are witnesses of all that he did both in the country of the Jews and in Jerusalem.</i></span>
     </p>
 </blockquote>
 <p>
@@ -71,7 +71,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>They put him to death by hanging him on a tree, but God raised him on the third day</strong></span>
+        <span><i>They put him to death by hanging him on a tree, but God raised him on the third day</i></span>
     </p>
 </blockquote>
 <p>
@@ -79,7 +79,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>and made him to appear, not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead.</strong></span>
+        <span><i>and made him to appear, not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead.</i></span>
     </p>
 </blockquote>
 <p>
@@ -87,7 +87,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>And he commanded us to preach to the people and to testify that he is the one appointed by God to judge the living and the dead.</strong></span>
+        <span><i>And he commanded us to preach to the people and to testify that he is the one appointed by God to judge the living and the dead.</i></span>
     </p>
 </blockquote>
 <p>
@@ -95,7 +95,7 @@
 </p>
 <blockquote>
     <p>
-        <span><strong>To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name.</strong></span>
+        <span><i>To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name.</i></span>
     </p>
 </blockquote>
 <p>

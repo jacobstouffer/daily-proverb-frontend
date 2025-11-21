@@ -15,7 +15,7 @@ export async function getDocument(key) {
     await client.quit();
     return data;
   } catch (error) {
-    console.log(`Error getting key ${key}: ${error}`);
+    console.error(`Error getting key ${key}: ${error}`);
     return null;
   }
 }
