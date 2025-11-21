@@ -1,5 +1,4 @@
 <script lang="ts">
-  import favicon from '$lib/assets/favicon.svg';
   let { children, data } = $props();
   import { page } from '$app/state';  
 
@@ -85,10 +84,6 @@
   }
 
 </style>
-
-<svelte:head>
-  <link rel="icon" href={favicon} />
-</svelte:head>
 
 <div class="page-container">
 <header>
