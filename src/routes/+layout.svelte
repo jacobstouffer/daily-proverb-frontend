@@ -22,7 +22,7 @@
   ) {
     if (routeId && routeId.toLowerCase().includes("about")) return "";
     if (pageVerse) return pageVerse;
-    return featuredVerse;
+    return featuredVerse ? featuredVerse.toString() : "";
   }
 
   function seedSelectedChapter(
@@ -32,7 +32,7 @@
   {
     if (routeId && routeId.toLowerCase().includes("about")) return "10";
     if (pageChapter) return pageChapter;
-    return featuredChapter;
+    return featuredChapter ? featuredChapter.toString() : "";
   }
 
   let selectedChapter: string = $state(seedSelectedChapter(page.params?.chapter, featuredChapter, page.route?.id));
