@@ -39,6 +39,8 @@
 
   function handleVerseChange(event: MouseEvent) {
     event.preventDefault();
+    // It is possible to select the empty option. In this case, we do nothing.
+    if (selectedVerse.length < 1) return;
     window.location.href = `/${selectedChapter}/${selectedVerse}`;
   }
 
