@@ -19,13 +19,21 @@
     </p>
 </div>
 <div>
+    <h3>Consider</h3>
+</div>
+<div>
+    <p>
+        My commentary on each proverb is <u>not definitive</u>. It is based on my study of the proverb as well as my limited experience. I was selective in what I wrote and chose not to attempt an exhaustive explanation of each subject. With each proverb, there is certainly more you can consider beyond what I wrote. There are certain implications and applications that I missed or omitted. Therefore, I encourage you to consider each proverb beyond my limited explanation. If it is more profitable for you to think through the proverbs without reading this devotional, I encourage you to do so! I certainly got much joy and benefit from doing that.
+    </p>
+</div>
+<div>
     <h3>
         Teaching Children
     </h3>
 </div>
 <div>
     <p>
-        The proverbs are useful to any person at any age, but they are 
+        The proverbs are useful to any person at any age, but they are <i>especially</i> helpful for a child in his preteen and teen years. Therefore, I recommend using these devotionals as a tool for walking through the proverbs with your preteen or teen.
     </p>
 </div>
 <div>
