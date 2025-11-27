@@ -5,7 +5,7 @@
 </div>
 <div>
     <p>
-        The body of the book of Proverbs begins in chapter 10 verse 1. The previous nine chapters are considered the book’s introduction. I will not be writing a commentary on chapters 1 through 9, so I encourage anyone who uses the website to read and reread Proverbs 1-9 on your own! I reference these chapters 
+        The body of the book of Proverbs begins in chapter 10 verse 1. The previous nine chapters are considered the book’s introduction. I will not be writing a commentary on chapters 1 through 9, so I encourage anyone who uses the website to read and reread Proverbs 1-9 on your own! I reference these chapters <i>a lot</i>, because they set the stage for the individual proverbs in the rest of the book.
     </p>
 </div>
 <div>
@@ -43,6 +43,6 @@
 </div>
 <div>
     <p>
-        Finally, I encourage you to share this website with an unbeliever you know who expresses a desire to grow in wisdom. It is my intention to introduce readers to the Gospel through these devotionals whenever the content of the proverb warrants it.
+        Finally, I encourage you to share this website with an unbeliever you know who expresses a desire to grow in wisdom. The proverbs of Solomon constantly challenge unbelievers to leave the path they are on and turn to God in trust and submission. They provide powerful portraits of the consequences of a life lived apart from God and the wonderful blessings of life with God. I also introduce readers to Christ and his Gospel throughout these devotionals whenever the content of the proverb warrants it.
     </p>
 </div>
