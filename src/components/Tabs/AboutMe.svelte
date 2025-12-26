@@ -15,23 +15,12 @@
 </div>
 <div>
     <h3>
-        Adoption Fund
-    </h3>
-</div>
-<div>
-    <p>
-        My wife and I are applying for international adoption from Columbia! A big reason that I am writing these devotionals is that I want to be able to share the wisdom from God’s Word with my future children. If you have been blessed by this project and would like to make a one-time contribution to our adoption fund, my wife and I would be greatly blessed. All donations will be used for adoption related expenses. The adoption process will likely take 1-2 more years. I will update this page with any major developments in the adoption process as they happen.
-    </p>
-    <p><a href="/about?tab=about-me">[Link here when available]</a></p>
-</div>
-<div>
-    <h3>
         My beliefs
     </h3>
 </div>
 <div>
     <p>
-        I am an evangelical Christian. I agree with the Statement of Faith of my church. In these devotionals, the authority and inerrancy of Scripture are a non-negotiable starting point. The uniqueness of Jesus as the only path to salvation is a given.
+        I am an evangelical Christian. I agree with the Statement of Faith of <a target="_blank" href="https://gracechurch.org/about/doctrinal-statement">my church</a>. In these devotionals, the authority and inerrancy of Scripture are a non-negotiable starting point. The uniqueness of Jesus as the only path to salvation is a given.
     </p>
 </div>
 <div>
