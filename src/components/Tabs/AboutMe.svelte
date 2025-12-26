@@ -15,16 +15,6 @@
 </div>
 <div>
     <h3>
-        Adoption Fund
-    </h3>
-</div>
-<div>
-    <p>
-    My wife and I are applying for international adoption from Columbia! A big reason that I am writing these devotionals is that I want to be able to share the wisdom from God’s Word with my future children. We have partnered with Lifesong for Orphans to help fundraise for the adoption. You can learn more here:
-    <a href="/about?tab=about-me">[Link here when available]</a></p>
-</div>
-<div>
-    <h3>
         My beliefs
     </h3>
 </div>
