@@ -92,7 +92,6 @@
   <article class="menu-items">
     <a href="/" class="menu-ref" data-sveltekit-reload>HOME</a>
     <a href="/about" class="menu-ref" data-sveltekit-reload>ABOUT</a>
-    <a href="/about?about-me" class="menu-ref" data-sveltekit-reload>ADOPTION FUND</a>
   </article>
 {#if hasContent}
 <article class="proverb-selection-container">
